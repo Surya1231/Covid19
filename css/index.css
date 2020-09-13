@@ -217,7 +217,11 @@ body {
 .recent {
   width: 100%;
   margin: auto;
+<<<<<<< HEAD
   background-image: url("../images/scroll.jpg");
+=======
+  background-image: url("../images/bg_header.jpg");
+>>>>>>> 245e4e2b531e3e6fd66d40046845d4815bfb17f3
   background-size: contain;
 }
 
@@ -231,11 +235,18 @@ body {
   margin: auto;
   border: 2px solid #2c774b;
   height: 400px;
+<<<<<<< HEAD
   border-radius: 20px;
   overflow-y: hidden;
   margin-top: 40px;
   padding: 20px;
   border-radius: 70px 10px 70px 10px !important;
+=======
+  border-radius: 10px !important;
+  overflow-y: hidden;
+  margin-top: 40px;
+  padding: 20px;
+>>>>>>> 245e4e2b531e3e6fd66d40046845d4815bfb17f3
   max-width: 800px;
   background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
 }

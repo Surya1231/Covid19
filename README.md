@@ -33,7 +33,11 @@ A Web-portal for keep track of all the information regarding covid19. Live at [h
    - `$> git clone https://github.com/Surya1231/Covid19.git`
 2. Start the xampp server
 3. Copy Covid19/ to xampp/htdocs/Covid19
+<<<<<<< HEAD
 4. Navigate to localhost://Covid19
+=======
+4. Navigate to localhost/Covid19
+>>>>>>> 245e4e2b531e3e6fd66d40046845d4815bfb17f3
 
 ## About Us
 
