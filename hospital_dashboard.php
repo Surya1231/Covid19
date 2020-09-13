@@ -14,8 +14,8 @@
         <br>
         <div class="centered2">Find all the information on rural and urban hospitals & beds information for all the states and Union Territories.</div>
         <div class="bottom-center">
-            <div class="tablinks selectedtab" onclick="function1(event,'hospitals')"> <div class="vertical"> Hospital & Beds </div>  </div>
-            <div class="tablinks" onclick="function1(event,'colleges')"> <div class="vertical"> Medical Colleges & Beds </div>  </div>
+            <div class="tablinks selectedtab" onclick="function1(event,'hospitals')"> <div class="vertical"> Hospital and Beds </div>  </div>
+            <div class="tablinks" onclick="function1(event,'colleges')"> <div class="vertical"> Medical Colleges and Beds </div>  </div>
             <div class= "clear"></div>
         </div>
       </div>
