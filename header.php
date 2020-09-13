@@ -34,4 +34,5 @@
     </script> -->
     <!--End of Tawk.to Script-->
 
-     <script src="https://account.snatchbot.me/script.js"></script><script>window.sntchChat.Init(88334)</script>
+    <!-- chatbox -->
+     <!-- <script src="https://account.snatchbot.me/script.js"></script><script>window.sntchChat.Init(88334)</script> -->
