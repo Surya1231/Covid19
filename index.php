@@ -16,7 +16,7 @@
         <script>
           var quote = "";
           var xhttp = new XMLHttpRequest();
-          xhttp.open("GET", "https://quota.glitch.me/random", true); 
+          xhttp.open("GET", "https://quota.glitch.me/random", true);
           xhttp.send(null);
           xhttp.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
@@ -49,7 +49,7 @@
     <br>
 
     <div class="main row">
-<<<<<<< HEAD
+
         <div id='map' style='height:700px;' class="col-md-9">
         <script>
           var  OSM_URL  =  'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
@@ -122,52 +122,24 @@
           </div>
       </div>
 
-=======
     <iframe src="https://www.trackcorona.live/map" style="width:100%;" > </iframe>
->>>>>>> 245e4e2b531e3e6fd66d40046845d4815bfb17f3
   </div>
 </div>
 <br>
 
 <div class="recent">
   <br>
-<<<<<<< HEAD
-  <h3 style="text-align:center; font-weight:bold"> Notifications Panel</h3>
-  <div class="row innerbox">
-    <div class="col-md-8">
-      <div class="scrollbox shadow-lg p-3 mb-5 rounded " >
-        <marquee direction="up" height="100%" scrolldelay="200" id="nnews">
-            <!-- <li> Suryaprakash Agarwal Donated Rs 20000 to the GoGreen Box. Cheers to Him!</li>
-            <li> GoGreen sponsored Energy Club to distribute 50 solar lamps in unelectrified villages. </li>
-            <li> Tesla promised investment of Rs 1 crore for 1 million tree plantations. </li>
-            <li> Anmol Mittal Donatated Rs 10 to GoGreen Box. Cheers to Him!</li>
-            <li> Keshav Sarraf requested Rs 3000 for seminar on renewable sources of energy.</li>
-            <li> GoGreen joined hands with Greenify for plantation of 1 million tree.</li>
-            <li> GoGreen funded Simpura village to build compost pits. </li>
-            <li> Suryaprakash Agarwal Donated Rs 2000 to the GoGreen Box. Cheers to Him!</li>
-            <li> GoGreen sponsored Energy Club to distribute 50 solar lamps in unelectrified villages. </li>
-            <li> Tesla promised investment of Rs 1 crore for 1 million tree plantations. </li>
-            <li> Anmol Mittal Donatated Rs 10 to GoGreen Box. Cheers to Him!</li>
-            <li> Keshav Sarraf requested Rs 3000 for seminar on renewable sources of energy.</li>
-            <li> GoGreen joined hands with Greenify for plantation of 1 million tree.</li>
-            <li> GoGreen funded Simpura village to build compost pits. </li> -->
-=======
   <h3 style="text-align:center; font-weight:bold ; color:white"> Notifications Panel</h3>
   <div class="row innerbox">
     <div class="col-md-12">
       <div class="scrollbox shadow-lg p-3 mb-5 rounded " >
         <marquee direction="up" height="100%" scrolldelay="200" id="nnews">
-            
->>>>>>> 245e4e2b531e3e6fd66d40046845d4815bfb17f3
+
         </marquee>
       </div>
       <script type="text/javascript">
 
         async function getapi(url) {
-<<<<<<< HEAD
-            // Storing response
-=======
->>>>>>> 245e4e2b531e3e6fd66d40046845d4815bfb17f3
             const response = await fetch(url);
 
             // Storing data in form of JSON
@@ -181,13 +153,6 @@
 
       </script>
     </div>
-<<<<<<< HEAD
-    <div class="weather col-md-4">
-      <div id="ml_c5773511"><div style="padding:0;margin:0;" id="ml_c5773511_i" v='1.1' a='{"t":"a","lang":"en","ids":["2907"],"a_bg":"#FFFFFF","a_br_c":"#43A047","a_n_b":"#43A047","a_icon":"#FFFFFF00","a_con":"#43A047","a_inter":"#FFFFFF00","a_n_c":"#FFFFFF","a_icon_color":"#000000","a_con_c":"#FFFFFF","a_int_h_color":"#000000","a_int_temp_color":"#000000","a_st":"celsius"}'></div><div id="ml_c5773511_c" style="padding:0;margin:0;padding:7px 5px;"><img src="https://weatherlabs.in/assets/img/logo_z_b.svg" style="width:15px;opacity:0.7;margin-right:5px;position:relative;top:1px;display:inline-block;"><a href="https://weatherlabs.in/jaipur/today/" style="color:grey;font-size:12px;text-decoration:none;" target="_blank" id="ml_c5773511_u">Weather Today</a></div></div><script async src="https://app.weatherlabs.in/js/?id=ml_c5773511"></script>
-        <div class="" style="clear:both">
-    </div>
-=======
->>>>>>> 245e4e2b531e3e6fd66d40046845d4815bfb17f3
   </div>
 
   <br><br>
