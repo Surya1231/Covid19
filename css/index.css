@@ -217,7 +217,7 @@ body {
 .recent {
   width: 100%;
   margin: auto;
-  background-image: url("../images/scroll.jpg");
+  background-image: url("../images/bg_header.jpg");
   background-size: contain;
 }
 
@@ -231,11 +231,10 @@ body {
   margin: auto;
   border: 2px solid #2c774b;
   height: 400px;
-  border-radius: 20px;
+  border-radius: 10px !important;
   overflow-y: hidden;
   margin-top: 40px;
   padding: 20px;
-  border-radius: 70px 10px 70px 10px !important;
   max-width: 800px;
   background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
 }
