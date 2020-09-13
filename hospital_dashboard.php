@@ -1,6 +1,6 @@
 <?php include("header.php"); ?>
 <title>GoGreen</title>
-<link rel="stylesheet" href="css/helplines.css">
+<link rel="stylesheet" href="css/hospital_dashboard.css">
 <link rel="stylesheet" href="css/footer2.css">
 </head>
 <body>
