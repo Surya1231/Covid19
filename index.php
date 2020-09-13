@@ -16,7 +16,7 @@
         <script>
           var quote = "";
           var xhttp = new XMLHttpRequest();
-          xhttp.open("GET", "https://quota.glitch.me/random", true); 
+          xhttp.open("GET", "https://quota.glitch.me/random", true);
           xhttp.send(null);
           xhttp.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
@@ -49,6 +49,79 @@
     <br>
 
     <div class="main row">
+
+        <div id='map' style='height:700px;' class="col-md-9">
+        <script>
+          var  OSM_URL  =  'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+          var  OSM_ATTRIB  =  '&copy;  <a  href="http://openstreetmap.org/copyright">OpenStreetMap</a>  contributors';
+          var  osmLayer  =  L.tileLayer(OSM_URL,  {attribution:  OSM_ATTRIB});
+          var  WAQI_URL    =  "https://tiles.waqi.info/tiles/usepa-aqi/{z}/{x}/{y}.png?token=_TOKEN_ID_";
+          var  WAQI_ATTR  =  'Air  Quality  Tiles  &copy;  <a  href="http://waqi.info">waqi.info</a>';
+          var  waqiLayer  =  L.tileLayer(WAQI_URL);
+          var map  =  L.map('map').setView([21.9124,  80.7873],  5);
+          map.addLayer(osmLayer).addLayer(waqiLayer);
+        </script>
+      </div>
+
+      <div class="data col-md-3">
+          <div class="data1">
+            <div class="left">
+              <b>AQI</b>
+            </div>
+            <div class="right">
+              <b>Air Pollution Level</b>
+            </div>
+          </div>
+          <div class="data2">
+            <div class="left">
+              0 - 50
+            </div>
+            <div class="right">
+              Good
+            </div>
+          </div>
+          <div class="data3">
+            <div class="left">
+              51 -100
+            </div>
+            <div class="right">
+              Moderate
+            </div>
+          </div>
+          <div class="data4">
+            <div class="left">
+              101-150
+            </div>
+            <div class="right">
+              Unhealthy for Sensitive Groups
+            </div>
+          </div>
+          <div class="data5">
+            <div class="left">
+              151-200
+            </div>
+            <div class="right">
+              Unhealthy
+            </div>
+          </div>
+          <div class="data6">
+            <div class="left">
+              201-300
+            </div>
+            <div class="right">
+              Very Unhealthy
+            </div>
+          </div>
+          <div class="data7">
+            <div class="left">
+              300+
+            </div>
+            <div class="right">
+              Hazardous
+            </div>
+          </div>
+      </div>
+
     <iframe src="https://www.trackcorona.live/map" style="width:100%;" > </iframe>
   </div>
 </div>
@@ -61,7 +134,7 @@
     <div class="col-md-12">
       <div class="scrollbox shadow-lg p-3 mb-5 rounded " >
         <marquee direction="up" height="100%" scrolldelay="200" id="nnews">
-            
+
         </marquee>
       </div>
       <script type="text/javascript">

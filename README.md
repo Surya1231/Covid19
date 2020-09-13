@@ -6,9 +6,9 @@ A Web-portal for keep track of all the information regarding covid19. Live at [h
 
 - News Feed ( notifications of every updated regarding covid19 )
 - Events ( Host awareness events virtually )
-- Issues ( Raise and discuss isssues )
-- Analytics ( Get realtime analytics of your city )
-- Donate ( Donate to various NGOs for fighting this pendamic )
+- Issues ( Raise and discuss issues )
+- Analytics ( Get Realtime analytics of your city )
+- Donate ( Donate to various NGOs for fighting this pandemic )
 
 ## Status
 
