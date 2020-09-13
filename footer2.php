@@ -3,7 +3,7 @@
 
 			<div class="footer-left">
 
-				<h3> <img src="images/logo.png" width="40" height="40"> <span>Nature.ly</span></h3>
+				<h3> <img src="images/logo.png" width="40" height="40"> <span>Covid19</span></h3>
 
 				<p class="footer-links">
 					<a href="index.php" class="link-1">Home</a>
@@ -17,7 +17,7 @@
 					<a href="#">Contact</a>
 				</p>
 
-				<p class="footer-company-name">Nature.ly © 2020</p>
+				<p class="footer-company-name">Covid19 © 2020</p>
 			</div>
 
 			<div class="footer-center">
@@ -34,7 +34,7 @@
 
 				<div>
 					<i class="fa fa-envelope"></i>
-					<p><a href="">support@nature.ly.com</a></p>
+					<p><a href="">support@covid19.com</a></p>
 				</div>
 
 			</div>
@@ -43,7 +43,7 @@
 
 				<p class="footer-company-about">
 					<span>Our Aim</span>
-				Nature.ly is a non-profitable startup with a mission to biring all the communities together and restore our beautiful environment.
+				Covid19 is a non-profitable startup with a mission to biring all the communities together and restore our beautiful environment.
 				</p>
 
 				<div class="footer-icons">
