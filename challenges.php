@@ -1,5 +1,5 @@
 <?php include("header.php"); ?>
-<title>Nature.ly</title>
+<title>Donate</title>
 <link rel="stylesheet" href="css/challenges.css">
 <link rel="stylesheet" href="css/footer2.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
@@ -13,7 +13,7 @@
   <div class="scroll-list">
     <div class="scroll-list__wrp js-scroll-content js-scroll-list">
       <?php
-        $query="Select * from challenge";
+        $query="Select * from ngo";
         $result = mysqli_query($conn, $query);
         $user = $_SESSION['user'];
         if($result){
@@ -22,15 +22,18 @@
         <h6 style="text-align:center; font-weight:bold;"> <?= $row['name'] ?></h6><hr>
         <div class="row">
           <div class="col-md-8" style="overflow: hidden;">
-            <p> <?= $row['description'] ?> </p>
+            <p> Work Area : <?= $row['work'] ?> </p>
+            <p> Location : <?= $row['location'] ?> </p>
           </div>
           <div class="col-md-4">
             <div class="center">
-              <button type="button" class="btn btn-outline-primary btn-sm sb" data-toggle="modal" data-target="#exampleModal3" data-des = "hello" data-startdate= "<?= $row['start-date'] ?>" data-enddate="<?= $row['end-date'] ?>"> Details</button>
-              <form action="complete.php" method="post" target="_blank">
+              <button type="button" class="btn btn-outline-primary btn-sm sb" data-toggle="modal" data-target="#exampleModal3"> Details</button>
+              <button type="button" class="btn btn-outline-danger btn-sm sb mt-2"> Donate </button> 
+              <!-- <form action="complete.php" method="post" target="_blank">
                 <input type="text" name="cid" value="<?php echo $row['cid']; ?>" hidden>
                 <input class="btn btn-outline-success btn-sm sb" style="margin-top: 10px;" type="submit" value="Donate" readonly>
-              </form>
+              </form> -->
+              <!-- <a class="btn btn-info sb"> Donate <a> -->
             </div>
           </div>
         </div>
@@ -83,8 +86,9 @@
       <div class="modal-body">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span> </button>
-        <p>A Platform for Action World Environment Day is the UN's most important day for encouraging worldwide awareness and action for the protection of our environment. Since it began in 1974, it has grown to become a global platform for public outreach that is widely celebrated in over 100 countries.</p>
-        <p>The People's Day Above all, World Environment Day is the "people's day" for doing something to take care of the Earth. That "something" can be focused locally, nationally or globally; it can be a solo action or involve a crowd. Everyone is free to choose.</p>
+        <p>Non-governmental organizations, or NGOs, were first called such in Article 71 in the Charter of the newly formed United Nations in 1945. While NGOs have no fixed or formal definition, they are generally defined as nonprofit entities independent of governmental influence (although they may receive government funding).
+
+        </p><p>As one can tell from the basic definition above, the difference between nonprofit organizations (NPOs) and NGOs is slim. However, the term "NGO" is not typically applied to U.S.-based nonprofit organizations. Generally, the NGO label is given to organizations operating on an international level although some countries classify their own civil society groups as NGOs.</p>
       </div>
     </div>
   </div>
