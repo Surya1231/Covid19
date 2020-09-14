@@ -1,6 +1,6 @@
 # Covid 19
 
-A Web-portal for keep track of all the information regarding covid19. Live at [https://contestmania.web.app](https://contestmania.web.app).
+A Web-portal for keep track of all the information regarding covid19. Live at [http://sphinxmnit.in/Covid19/](http://sphinxmnit.in/Covid19/).
 
 ## Features Planned
 
