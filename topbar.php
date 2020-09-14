@@ -14,6 +14,7 @@
         <li><a href="challenges.php" class="btn btn-sm btn-outline-info">Challenges</a></li>
         <li><a href="hospital_dashboard.php" class="btn btn-sm btn-outline-info">Hospital Dashboard</a></li>
         <li><a href="helplines.php" class="btn btn-sm btn-outline-info">Covid19 Helplines</a></li>
+        <li><a href="deceased.php" class="btn btn-sm btn-outline-info">Deceased</a></li>
         <li><a href="#" class="btn btn-sm btn-outline-info" data-toggle="modal" data-target="#smartoption">Smart Portal</a></li>
         <li><a href="#" class="btn btn-sm btn-outline-info" data-toggle="modal" data-target="#exampleModalCenter">More</a></li>
       </ul>
