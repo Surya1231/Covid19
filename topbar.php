@@ -11,7 +11,7 @@
       <ul class="badi">
         <li><a href="events.php" class="btn btn-sm btn-outline-info">Event</a></li>
         <li><a href="issues.php" class="btn btn-sm btn-outline-info">Issues</a></li>
-        <li><a href="challenges.php" class="btn btn-sm btn-outline-info">Challenges</a></li>
+        <li><a href="challenges.php" class="btn btn-sm btn-outline-info">NGOs</a></li>
         <li><a href="hospital_dashboard.php" class="btn btn-sm btn-outline-info">Hospital Dashboard</a></li>
         <li><a href="helplines.php" class="btn btn-sm btn-outline-info">Covid19 Helplines</a></li>
         <li><a href="#" class="btn btn-sm btn-outline-info" data-toggle="modal" data-target="#smartoption">Smart Portal</a></li>

@@ -64,7 +64,7 @@ CREATE TABLE `challenge` (
 --
 
 INSERT INTO `challenge` (`cid`, `name`, `type`, `description`, `start-date`, `end-date`, `registrations`, `completions`, `active`) VALUES
-(1, 'One day Challenge', 'tree-plantation', 'Global environmental challenges, such as impacts of climate change, loss of biodiversity, over-use of natural resources and environmental and health.', '2020-01-19', '2020-01-29', 0, 0, 1),
+(1, 'Center For Social Security Action & Research (CSSAR) | education | Delhi ', '', '2020-01-19', '2020-01-29', 0, 0, 1),
 (2, 'Tree Plantation for 5 days continuously', 'tree-plantation', 'Tree-planting is the process of transplanting tree seedlings, generally for forestry, land reclamation, or landscaping purpose.', '2020-01-19', '2020-01-20', 0, 0, 1),
 (3, 'Soil exploitation and overbuilding', 'cleanliness', 'Because of human activities including polluting farming practices, soil contamination, building and infrastructure construction, farming soils are damaged.', '2020-01-17', '2020-01-22', 0, 0, 1),
 (4, 'Walk 10000 Steps daily', 'other', 'Completing an extra 10,000 steps each day typically burns about 2000 to 3500 extra calories each week.', '2020-01-16', '2020-01-17', 0, 0, 1),
@@ -294,6 +294,31 @@ CREATE TABLE `user` (
 INSERT INTO `user` (`uid`, `email`, `password`, `name`, `city`, `state`, `address`, `contact`, `points`, `description`) VALUES
 (1, 'anmolmittal53@gmail.com', 'YW5tb2w=', 'Anmol Mittal', 'JAIPUR', 'mnit, jaipur', 'hostel no 8, room no F-59, Mnit, jaipur', '7016268722', 690, ''),
 (37, '2017umt1501@mnit.ac.in', 'ZGlrc2hh', 'Suryaprakash Agarwal', 'Chandigarh', 'Chandigarh', 'MNIT JAIPUR', '7895200248', 300, '');
+
+
+CREATE TABLE `ngo` (
+  `id` int(11) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `work` varchar(100) NOT NULL,
+  `location` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `ngo`
+--
+
+INSERT INTO `ngo` (`id`, `name`, `work`, `location`) VALUES
+(1, 'Center For Social Security Action & Research (CSSAR) ', 'education', 'Delhi'),
+(2, 'Mazi Sainik Shikshan Ani Swasthya Kalyan Sanstha', 'Education', 'Maharastra'),
+(3, 'Annamrita Foundation', 'children', 'Maharastra'),
+(4, 'Mobile Creches for Working Mothers\' Children', 'children', 'Delhi'),
+(5, 'Pahal Jan Sahyog Vikas Sansthan', 'health', 'Madya Pradesh'),
+(6, 'Sankara Nethralaya ', 'health', 'Tamil Nadu '),
+(7, 'Mazi Sainik Shikshan Ani Swasthya Kalyan Sanstha', 'Education', 'Maharastra'),
+(8, 'Annamrita Foundation', 'children', 'Maharastra'),
+(9, 'Mobile Creches for Working Mothers\' Children', 'children', 'Delhi'),
+(10, 'Pahal Jan Sahyog Vikas Sansthan', 'health', 'Madya Pradesh'),
+(11, 'Sankara Nethralaya ', 'health', 'Tamil Nadu ');
 
 --
 -- Indexes for dumped tables
