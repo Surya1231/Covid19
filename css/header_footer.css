@@ -2,7 +2,7 @@ body {
   /* background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%); */
   margin: 0;
   padding: 0;
-  background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+  /* background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%); */
   font-family: cursive !important;
 }
 
@@ -37,6 +37,7 @@ body {
   margin: auto;
   border-radius: 5px;
   z-index: 10000;
+  border: 5px solid #3D9970;
 }
 
 .sticky {

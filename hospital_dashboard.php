@@ -10,9 +10,9 @@
       <div class="topmenu">
         <div class="containermain"> </div>
         <div class="centered1">Hospital Dashboard</div>
-        <br>
-        <br>
         <div class="centered2">Find all the information on rural and urban hospitals & beds information for all the states and Union Territories.</div>
+        <br>
+        <br>
         <div class="bottom-center">
             <div class="tablinks selectedtab" onclick="function1(event,'hospitals')"> <div class="vertical"> Hospital and Beds </div>  </div>
             <div class="tablinks" onclick="function1(event,'colleges')"> <div class="vertical"> Medical Colleges and Beds </div>  </div>
@@ -28,8 +28,11 @@
         </div>
 
         <div class="subcontent" id="colleges">
+          <div class="searchbox">
+                      Filters:
           <input type="text" id="stateFilter" onkeyup="filterMedicalColleges()" placeholder="Enter State Name">
           <input type="text" id="typeFilter" onkeyup="filterMedicalColleges()" placeholder="Enter Ownership Type">
+          </div>
           <br>
           <table id="medicalcolleges" class="table table-striped table-bordered"></table>
         </div>
@@ -78,6 +81,7 @@
         function show_hospitalbeds(data) {
             let tab =
                 `<tr>
+                <th>#</th>
                   <th>State</th>
                   <th>Rural Hospitals</th>
                   <th>Rural Beds</th>
@@ -87,9 +91,11 @@
                   <th>Total Beds(State-wise)</th>
                  </tr>`;
 
+                 let count = 1;
             // Loop to access all rows
             for (let r of data["data"]["regional"]) {
                 tab += `<tr>
+                <td>${count++} </td>
             <td>${r.state} </td>
             <td>${r.ruralHospitals}</td>
             <td>${r.ruralBeds}</td>

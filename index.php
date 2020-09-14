@@ -51,7 +51,7 @@
 <div id="index">
     <div>
       <br>
-      <h2> Covid19 India </h2>
+      <h2> Covid19 Tracker </h2>
     </div>
     <br>
 
@@ -152,7 +152,7 @@
               var data = await response.json();
               console.log(data);
               for (let r of data["data"]["notifications"].slice(1)){
-                $("#nnews").append("<a target='_blank' href='"+r.link+"'><li>"+r.title.substring(10)+"("+r.title.substring(0, 10)+")"+"</li></a>");
+                $("#nnews").append("<a target='_blank' href='"+r.link+"'><li>"+r.title.substring(10)+" ("+r.title.substring(0, 10)+")"+"</li></a>");
               }
           }
           getapi("https://api.rootnet.in/covid19-in/notifications");
