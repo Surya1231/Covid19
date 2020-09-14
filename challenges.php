@@ -19,7 +19,7 @@
         if($result){
         while($row = mysqli_fetch_assoc($result)) { ?>
           <div class="scroll-list__item js-scroll-list-item">
-        <h6 style="text-align:center; font-weight:bold;"> <?= $row['name'] ?> (200 Green Points)</h6><hr>
+        <h6 style="text-align:center; font-weight:bold;"> <?= $row['name'] ?></h6><hr>
         <div class="row">
           <div class="col-md-8" style="overflow: hidden;">
             <p> <?= $row['description'] ?> </p>
@@ -29,7 +29,7 @@
               <button type="button" class="btn btn-outline-primary btn-sm sb" data-toggle="modal" data-target="#exampleModal3" data-des = "hello" data-startdate= "<?= $row['start-date'] ?>" data-enddate="<?= $row['end-date'] ?>"> Details</button>
               <form action="complete.php" method="post" target="_blank">
                 <input type="text" name="cid" value="<?php echo $row['cid']; ?>" hidden>
-                <input class="btn btn-outline-success btn-sm sb" style="margin-top: 10px;" type="submit" value="Complete" readonly>
+                <input class="btn btn-outline-success btn-sm sb" style="margin-top: 10px;" type="submit" value="Donate" readonly>
               </form>
             </div>
           </div>
@@ -37,36 +37,6 @@
       </div>
 
     <?php }} ?>
-      <div class="scroll-list__item js-scroll-list-item"></div>
-      <div class="scroll-list__item js-scroll-list-item"></div>
-      <div class="scroll-list__item js-scroll-list-item"></div>
-      <div class="scroll-list__item js-scroll-list-item"></div>
-      <div class="scroll-list__item js-scroll-list-item"></div>
-      <div class="scroll-list__item js-scroll-list-item"></div>
-      <div class="scroll-list__item js-scroll-list-item"></div>
-      <div class="scroll-list__item js-scroll-list-item"></div>
-      <div class="scroll-list__item js-scroll-list-item"></div>
-      <div class="scroll-list__item js-scroll-list-item"></div>
-      <div class="scroll-list__item js-scroll-list-item"></div>
-      <div class="scroll-list__item js-scroll-list-item"></div>
-      <div class="scroll-list__item js-scroll-list-item"></div>
-      <div class="scroll-list__item js-scroll-list-item"></div>
-      <div class="scroll-list__item js-scroll-list-item"></div>
-      <div class="scroll-list__item js-scroll-list-item"></div>
-      <div class="scroll-list__item js-scroll-list-item"></div>
-      <div class="scroll-list__item js-scroll-list-item"></div>
-      <div class="scroll-list__item js-scroll-list-item"></div>
-      <div class="scroll-list__item js-scroll-list-item"></div>
-      <div class="scroll-list__item js-scroll-list-item"></div>
-      <div class="scroll-list__item js-scroll-list-item"></div>
-      <div class="scroll-list__item js-scroll-list-item"></div>
-      <div class="scroll-list__item js-scroll-list-item"></div>
-      <div class="scroll-list__item js-scroll-list-item"></div>
-      <div class="scroll-list__item js-scroll-list-item"></div>
-      <div class="scroll-list__item js-scroll-list-item"></div>
-      <div class="scroll-list__item js-scroll-list-item"></div>
-      <div class="scroll-list__item js-scroll-list-item"></div>
-      <div class="scroll-list__item js-scroll-list-item"></div>
     </div>
   </div>
 </div>
