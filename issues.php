@@ -1,5 +1,5 @@
 <?php include("header.php"); ?>
-<title>GoGreen</title>
+<title>Covid19</title>
 <link rel="stylesheet" href="css/issues.css">
 <link rel="stylesheet" href="css/footer2.css">
 <style media="screen">

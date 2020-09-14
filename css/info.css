@@ -102,29 +102,35 @@ body {
   position: relative;
   text-align: center;
   color: white;
-  background: url('../images/infobg.jpg');
+  background: url('../images/measuresbackground.jpg');
   background-position: 50% 50%;
   background-size: cover;
 }
 
 .centered1 {
-  font-size: 75px;
+  text-align: center;
+  padding: 5px;
+  font-size: 35px;
   position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-weight: 580;
-  color: white;
+  bottom: 20%;
+  left: 3%;
+  font-weight: 540;
+  color: black;
+  background-color: rgba(0,141,201,0.85);
 }
 
 .centered2 {
+  text-align: center;
   font-size: 22px;
   position: absolute;
   font-weight: 300;
-  top: 48%;
-  left: 50%;
+  bottom: 8%;
+  left: 25.6%;
   transform: translate(-50%, -50%);
-  color: white;
+  font-weight: 500;
+  color: black;
+  background-color: rgba(0,141,201,0.85);
+  max-width: 45%;
 }
 
 .bottom-center {
@@ -144,7 +150,7 @@ body {
   margin-right: 1%;
   float: Left;
   text-align: center;
-  background: transparent;
+  background: tomato;
   height: 100%;
   text-transform: uppercase;
   display: table-cell;
@@ -166,7 +172,7 @@ body {
 }
 
 .selectedtab {
-  background: #C7E2CA;
+  background: #39CCCC;
   color: black;
 }
 
@@ -200,7 +206,8 @@ ul li {
   font-weight: 300;
 }
 
-#treatment {}
+#treatment {
+}
 
 .display1, .display2, .display3, .display4, .display5 {
   box-shadow: 1px 3px 20px lightgrey;
