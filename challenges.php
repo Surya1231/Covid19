@@ -28,7 +28,7 @@
           <div class="col-md-4">
             <div class="center">
               <button type="button" class="btn btn-outline-primary btn-sm sb" data-toggle="modal" data-target="#exampleModal3"> Details</button>
-              <button type="button" class="btn btn-outline-danger btn-sm sb mt-2"> Donate </button> 
+              <a type="button" class="btn btn-outline-danger btn-sm sb mt-2" href="https://www.giveindia.org/certified-indian-ngos"> Donate </a> 
               <!-- <form action="complete.php" method="post" target="_blank">
                 <input type="text" name="cid" value="<?php echo $row['cid']; ?>" hidden>
                 <input class="btn btn-outline-success btn-sm sb" style="margin-top: 10px;" type="submit" value="Donate" readonly>
