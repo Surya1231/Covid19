@@ -15,7 +15,7 @@
         <li><a href="hospital_dashboard.php" class="btn btn-sm btn-outline-info">Hospital Dashboard</a></li>
         <li><a href="helplines.php" class="btn btn-sm btn-outline-info">Covid19 Helplines</a></li>
         <li><a href="#" class="btn btn-sm btn-outline-info" data-toggle="modal" data-target="#smartoption">Smart Portal</a></li>
-        <li><a href="#" class="btn btn-sm btn-outline-info" data-toggle="modal" data-target="#exampleModalCenter">More</a></li>
+        <!-- <li><a href="#" class="btn btn-sm btn-outline-info" data-toggle="modal" data-target="#exampleModalCenter">More</a></li> -->
       </ul>
       <ul class="chhoti">
         <?php  if($_SESSION["user"]!=null) {?>
@@ -70,7 +70,7 @@ function myFunction() {
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
         <span aria-hidden="true">&times;</span> </button>
         <ul>
-          <li><a href="fun.php"> FunZone </a></li>
+          <li><a href="info.php" class="">CovidoPedia</a></li><br>
           <li><a href="air.php" > Air Quality </a></li>
           <li><a href="smart.php"> Smart AI </a></li>
           <li><a href="https://earth.nullschool.net" target="_blank"> Web View </a></li>
