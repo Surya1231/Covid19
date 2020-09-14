@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 02, 2020 at 06:14 AM
--- Server version: 10.4.6-MariaDB
--- PHP Version: 7.3.9
+-- Generation Time: Sep 14, 2020 at 01:11 PM
+-- Server version: 10.4.14-MariaDB
+-- PHP Version: 7.4.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -19,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `gogreen`
+-- Database: `covid19`
 --
 
 -- --------------------------------------------------------
@@ -123,11 +122,16 @@ CREATE TABLE `ecofriendlyproducts` (
   `description` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-Insert into `ecofriendlyproducts`(`old`,`alternative`,`description`) values('plastic straws','stainless steel straws','Plastic straws are really, really bad for the environment. They are not recyclable, and they are really damaging to marine life.Luckily, these stainless steel straws are a cheap, easy, and ~fancy~ way to do your part to reduce the number of plastic straws clogging the seas.  ');
-Insert into `ecofriendlyproducts`(`old`,`alternative`,`description`) values('plastic utensils','reusable bamboo utensil set','The To Go Ware utensils come in a pouch made from recycled plastic (you can choose from a variety of colors), and the set is made up of a bamboo spoon, a fork, a knife, and chopsticks. They are lightweight and easy to carry ');
-Insert into `ecofriendlyproducts`(`old`,`alternative`,`description`) values('rubber footwear','wool footwear','Allbirds created an innovative wool fabric made specifically for footwear.By wearing a pair of Allbirds wool shoes you can wear a pair of comfortable shoes from a company that found a new use for naturally existing materials, rather than relying on cheaper synthetics.');
-Insert into `ecofriendlyproducts`(`old`,`alternative`,`description`) values('plastic cups','reusable coffee cups','In a similar style to coffee cups you get from Starbucks and other shops, Onyaâ€™s reusable coffee cups are made out of 100% food safe silicone.');
-Insert into `ecofriendlyproducts`(`old`,`alternative`,`description`) values('plastic bags','disposable waste bag','Smart alternative to the non biodegradable plastic bags');
+--
+-- Dumping data for table `ecofriendlyproducts`
+--
+
+INSERT INTO `ecofriendlyproducts` (`epid`, `old`, `alternative`, `description`) VALUES
+(0, 'plastic straws', 'stainless steel straws', 'Plastic straws are really, really bad for the environment. They are not recyclable, and they are really damaging to marine life.Luckily, these stainless steel straws are a cheap, easy, and ~fancy~ way to do your part to reduce the number of plastic straws clogging the seas.  '),
+(0, 'plastic utensils', 'reusable bamboo utensil set', 'The To Go Ware utensils come in a pouch made from recycled plastic (you can choose from a variety of colors), and the set is made up of a bamboo spoon, a fork, a knife, and chopsticks. They are lightweight and easy to carry '),
+(0, 'rubber footwear', 'wool footwear', 'Allbirds created an innovative wool fabric made specifically for footwear.By wearing a pair of Allbirds wool shoes you can wear a pair of comfortable shoes from a company that found a new use for naturally existing materials, rather than relying on cheaper synthetics.'),
+(0, 'plastic cups', 'reusable coffee cups', 'In a similar style to coffee cups you get from Starbucks and other shops, Onyaâ€™s reusable coffee cups are made out of 100% food safe silicone.'),
+(0, 'plastic bags', 'disposable waste bag', 'Smart alternative to the non biodegradable plastic bags');
 
 -- --------------------------------------------------------
 
@@ -154,13 +158,13 @@ CREATE TABLE `event` (
 --
 
 INSERT INTO `event` (`evid`, `name`, `type`, `host`, `description`, `venue`, `city`, `start-date`, `end-date`, `registrations`, `active`) VALUES
-(1, 'Cleanliness Drive', 'cleanliness', '', 'event-attachments/soil.jpg', 'Lnmiit Jaipur', 'Jaipur', '2020-01-18', '2020-01-30', 0, 1),
-(2, 'Tree Plantation', 'tree-plantation', '', 'event-attachments/treeplant.jpg', 'MNIT JAIPUR', 'Jaipur', '2020-01-23', '2020-01-31', 0, 2),
-(3, 'Green energy seminar', 'awareness', '', 'event-attachments/hold.jpg', 'Mumbai', 'Mumbai', '2020-01-19', '2020-01-29', 1, 1),
-(4, 'Renewable energy', 'awareness', '1', 'event-attachments/infobg.jpg', 'New Delhi', 'New Dehli', '2020-01-23', '2020-01-30', 0, 1),
-(5, 'GoGreen Meet', 'other', '1', 'event-attachments/meet.jpg', 'Jaipur', 'Jaipur', '2020-04-08', '2020-04-25', 1, 1),
-(6, 'Marathon', 'awareness', '1', 'event-attachments/marathon.jfif', 'Dehradun', 'Dehradun', '2020-01-07', '2020-01-10', 0, 2),
-(7, 'Geeckathon', 'other', '1', 'event-attachments/geckathon.jfif', 'Lnmiit ', 'Jaipur', '2020-01-01', '2020-01-04', 0, 2),
+(1, '2020 - Year of the Nurse and the Midwife', 'cleanliness', '', 'event-attachments/nursebaby.jpg', 'Lnmiit Jaipur', 'Jaipur', '2020-01-01', '2020-12-30', 0, 1),
+(2, 'Global Trans Fat Elimination', 'tree-plantation', '', 'event-attachments/wine.jpg', 'MNIT JAIPUR', 'Jaipur', '2020-01-23', '2020-01-31', 0, 2),
+(3, 'World Patient Safety Day 2020', 'awareness', '', 'event-attachments/wpsdevent.jpg', 'Mumbai', 'Mumbai', '2020-09-20', '2020-10-29', 1, 1),
+(4, 'Health of Refugees and Migrants', 'awareness', '1', 'event-attachments/migrantworkers.jpg', 'New Delhi', 'New Dehli', '2020-10-23', '2020-10-30', 0, 1),
+(5, 'Action Plan for Healthy lives', 'other', '1', 'event-attachments/healtylives.jpg', 'Jaipur', 'Jaipur', '2020-11-08', '2020-11-25', 1, 1),
+(6, 'Moving faster to end newborn deaths', 'awareness', '1', 'event-attachments/death.jpg', 'Dehradun', 'Dehradun', '2020-01-07', '2020-01-10', 0, 2),
+(7, 'Responding to COVID-19', 'other', '1', 'event-attachments/covid.jpg', 'Lnmiit ', 'Jaipur', '2020-01-01', '2020-01-04', 0, 2),
 (8, 'Yoga program', 'other', '1', 'event-attachments/yoga.jfif', 'Kolkata', 'Kolkata', '2019-11-05', '2020-01-23', 0, 2);
 
 -- --------------------------------------------------------
@@ -314,11 +318,6 @@ ALTER TABLE `comments`
   ADD PRIMARY KEY (`uid`);
 
 --
--- Indexes for table `ecofriendlyproducts`
---
-
-
---
 -- Indexes for table `event`
 --
 ALTER TABLE `event`
@@ -375,12 +374,6 @@ ALTER TABLE `challenge`
 --
 ALTER TABLE `comments`
   MODIFY `uid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
-
---
--- AUTO_INCREMENT for table `ecofriendlyproducts`
---
-ALTER TABLE `ecofriendlyproducts`
-  MODIFY `epid` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `event`

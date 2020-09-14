@@ -9,7 +9,7 @@
 <div id="info">
       <div class="topmenu">
         <div class="containermain"> </div>
-        <div class="centered1">Covid19 HELPLINES</div>
+        <div class="centered1">Covid19 Helpline</div>
         <br>
         <br>
         <div class="centered2">Contact helpline number information for all the States and Union Territories. Don't hesitate to ask for help or guidance!!</div>
@@ -41,13 +41,16 @@
           function show_contacts(data) {
               let tab =
                   `<tr>
+                  <th>#</th>
                     <th>State</th>
                     <th>Contact Details</th>
                    </tr>`;
 
               // Loop to access all rows
+              let count = 1;
               for (let r of data["data"]["contacts"]["regional"]) {
                   tab += `<tr>
+                  <td>${count++} </td>
               <td>${r.loc} </td>
               <td>${r.number}</td>
           </tr>`;
