@@ -1,5 +1,5 @@
 <?php include("header.php"); ?>
-<title>GoGreen</title>
+<title>Covid19</title>
 <link rel="stylesheet" href="css/index.css">
 <link rel="stylesheet" href="css/footer2.css">
 <link  rel="stylesheet"  href="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.css"  />
