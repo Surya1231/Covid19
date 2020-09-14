@@ -2,17 +2,16 @@
 include("header.php");
 ?>
 <title>Events</title>
-<link rel="stylesheet" href="css/events.css">
-<link rel="stylesheet" href="css/footer2.css">
 <style media="screen">
   body{
     background: #eee url(https://subtlepatterns.com/patterns/extra_clean_paper.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     padding-bottom: 0;
-
   }
 </style>
+<link rel="stylesheet" href="css/events.css">
+<link rel="stylesheet" href="css/footer2.css">
 </head>
 <body>
 
@@ -190,58 +189,150 @@ include("header.php");
 <?php include 'topbar.php'; ?>
 <div class="events-body">
 
+  <div style="margin: 40px auto 10px auto; overflow: hidden; height: 500px; background-position: center; position: relative;" class=".events_background">
+    <img src="images\events_background.jpg">
+    <div class="bottom-left">Events</div>
+  </div>
+
   <div class="new-event">
     <button type="button" class="btn btn-success btn-lg  float-right" data-toggle="modal" data-target="#hostevent">Host An Event!</button>
   </div>
 <br>
 <br>
-<div id="header">
-<ul id="menu">
-<li><a href="/"><span>Current Events</span></a></li>
-</ul>
-</div>
 <br>
-<br>
-<br>
-  <div class="current_events">
 
-    <div class="row">
-  <?php
-    $query="Select * from event where active=1";
-    $result = mysqli_query($conn, $query);
-    while($row = mysqli_fetch_assoc($result)) {
-      $uuid=$row['host'];
-      $hostdata = $db->SinglerunQuery("select * from user where uid='$uuid'");
-       echo '
-       <div class="flip-card">
-         <div class="flip-card-inner">
-           <div class="flip-card-front">
-           <strong class="d-inline-block mb-2 text-success" style="text-transform:uppercase;">'.$row["name"].'</strong>';
-           $start = strtotime($row['start-date']);
-           $start = date('d-F-Y', $start);
-           $end = strtotime($row['end-date']);
-           $end = date('d-F-Y', $end);
-           echo '<div class="mb-1 text-mute small">'.$start.' to '.$end.'</div>
-             <img class="card-img-right flex-auto  d-lg-block" alt="Thumbnail [200x250]" src="'.$row['description'].'" width="100%" height="100%">
-           </div>
-           <div class="flip-card-back">
-             <h4><strong class="d-inline-block mb-2" style="text-transform:uppercase;">'.$row["name"].'</strong></h4>
-             <p class="card-text mb-auto">Venue : '.$row["venue"].'</p>
-             <p class="card-text mb-auto">Host : '.$hostdata["name"].'</p>
-             <p class="card-text mb-auto">'.$row["registrations"].' Total Registrations</p>
-             <div class=""><br>
-             <button class="btn btn-success btn-sm" style="display:inline;" data-toggle="modal" data-target="#registration" data-evid='.$row["evid"].' data-name='.$row["name"].'>Register</button>
-            <button type="button" class="btn btn-success btn-sm" style="display:inline;" data-toggle="modal" data-target="#more-info" data-evn='.$row["name"].' data-description='.$row["description"].'>More Info</button>
-             </div>
-           </div>
-         </div>
-       </div>
-       ';
-    }
-  ?>
+<div class="back">
+
+  <div class="lefft">
+    <div id="header">
+      <ul id="menu">
+      <li><a href="/"><span>Current Events</span></a></li>
+      </ul>
+    </div>
+
+    <div class="divs">
+      <?php
+        $query="Select * from event where active=1";
+        $result = mysqli_query($conn, $query);
+        while($row = mysqli_fetch_assoc($result)) {
+          $uuid=$row['host'];
+          $hostdata = $db->SinglerunQuery("select * from user where uid='$uuid'");
+           echo '
+            <div class="events">
+               <strong class="d-inline-block mb-2 text-success" style="text-transform:uppercase;"></strong>';
+               $start = strtotime($row['start-date']);
+               $start = date('d F', $start);
+               $end = strtotime($row['end-date']);
+               $end = date('d F Y', $end);
+               echo '
+               <div class="lrows">
+                 <img class="card-img-right flex-auto  d-lg-block" alt="Thumbnail [200x250]" src="'.$row['description'].'" width="150" height="130">
+              </div>
+
+              <div class="rrows">
+              <h5><b>'.$row['name'].'</b></h5>
+                <div class="mb-1 text-mute small">'.$start.' - '.$end.'</div>
+                <div class="mb-1 text-mute small">'.$row['registrations'].' people going</div>
+                <button class="btn btn-success btn-sm" style="display:inline;" data-toggle="modal" data-target="#registration" data-evid='.$row["evid"].' data-name='.$row["name"].'>Register</button>
+                <button class="btn btn-success btn-sm" style="display:inline;" data-toggle="modal" data-target="#more-info" data-evn='.$row["name"].' data-description='.$row["description"].'>More Info</button>
+                </div>
+              </div>
+              <hr>
+           ';
+        }
+      ?>
+    </div>
+</div>
+
+  <div class="rigght">
+    <div id="header">
+      <ul id="menu">
+      <li><a href="/"><span>WHO Campaigns</span></a></li>
+      </ul>
+    </div>
+    <img src="images/who.png" style="width: auto; height: 300px">
   </div>
-  </div>
+</div>
+
 <br>
+<br>
+
+<div class="back">
+
+  <div class="lefft">
+    <div id="header">
+      <ul id="menu">
+      <li><a href="/"><span>Past Events</span></a></li>
+      </ul>
+    </div>
+
+    <div class="divs">
+      <?php
+        $query="Select * from event where active=2";
+        $result = mysqli_query($conn, $query);
+        while($row = mysqli_fetch_assoc($result)) {
+          $uuid=$row['host'];
+          $hostdata = $db->SinglerunQuery("select * from user where uid='$uuid'");
+           echo '
+            <div class="events">
+               <strong class="d-inline-block mb-2 text-success" style="text-transform:uppercase;"></strong>';
+               $start = strtotime($row['start-date']);
+               $start = date('d F', $start);
+               $end = strtotime($row['end-date']);
+               $end = date('d F Y', $end);
+               echo '
+               <div class="lrows">
+                 <img class="card-img-right flex-auto  d-lg-block" alt="Thumbnail [200x250]" src="'.$row['description'].'" width="150" height="130">
+              </div>
+
+              <div class="rrows">
+              <h5><b>'.$row['name'].'</b></h5>
+                <div class="mb-1 text-mute small">'.$start.' - '.$end.'</div>
+                <div class="mb-1 text-mute small">'.$row['registrations'].' people going</div>
+                <button class="btn btn-success btn-sm" style="display:inline;" data-toggle="modal" data-target="#more-info" data-evn='.$row["name"].' data-description='.$row["description"].'>More Info</button>
+                </div>
+              </div>
+              <hr>
+           ';
+        }
+      ?>
+    </div>
+</div>
+
+  <div class="rigght">
+    <div id="header">
+      <ul id="menu">
+      <li><a href="/"><span>WHO Meetings</span></a></li>
+      </ul>
+    </div>
+
+    <marquee direction="up">
+      <div>
+        Africa
+      </div>
+      <hr>
+      <div class="">
+        Europe
+      </div>
+      <hr>
+      <div class="">
+        India
+      </div>
+      <hr>
+      <div class="">
+        America
+      </div>
+      <hr>
+      <div class="">
+        Western Pacific
+      </div>
+
+    </marquee>
+    <!-- <img src="images/meetings.png" style="width: auto; height: 300px"> -->
+  </div>
+</div>
+
+<!-- <br>
 <div id="header">
 <ul id="menu">
 <li><a href="/"><span>Past Events</span></a></li>
@@ -268,7 +359,7 @@ include("header.php");
               <h4><strong class="d-inline-block mb-2 " style="text-transform:uppercase;">'.$row["name"].'</strong></h4>
 
               <p class="card-text mb-auto">Venue : '.$row["venue"].'</p>
-              <p class="card-text mb-auto">Host : '.$hostdata["name"].'</p>
+              <p class="card-text mb-auto">Host : '.$row["name"].'</p>
               <p class="card-text mb-auto">'.$row["registrations"].' Total Participants</p>
               <div class=""><br>
               <a type="button" class="btn btn-success btn-sm" style="display:inline;" data-toggle="modal" data-target="#more-info" data-evn='.$row["name"].' data-description='.$row["description"].'>More Info</a>
@@ -282,7 +373,7 @@ include("header.php");
       }
     ?>
     </div>
-</div>
+</div> -->
 </div>
 <script type="text/javascript">
   $('#more-info').on('show.bs.modal', function (event) {
