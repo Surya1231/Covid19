@@ -13,6 +13,7 @@ A Web-portal for keep track of all the information regarding covid19. Live at [h
 ## Status
 
 - Web based App is in development phase
+- You can also check website overview in form of images in folder WEBSITE_IMAGES
 
 ## Tech Stack
 
